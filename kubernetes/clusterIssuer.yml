@@ -1,0 +1,6 @@
+apiVersion: cert-mananger.io/v1
+kind: ClusterIssuer
+metadata:
+  name: selfsigned-issuer
+spec:
+  selfSigned: {}

@@ -1,0 +1,9 @@
+apiVersion: cert-mananger.io/v1
+kind: Certificate
+metadata:
+  name: alb-selfsigned-certificate
+spec:
+  secretName: alb-tls-secret
+  issuerRef:
+    name: selfsigned-issuer
+    kind: ClusterIssuer
